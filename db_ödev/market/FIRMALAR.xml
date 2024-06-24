@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2024-05-30T11:52:17">
+<FIRMALAR>
+<Firma_ID>1</Firma_ID>
+<Firma_Adi>Coca Cola Company</Firma_Adi>
+<Adres>İstanbul</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>2</Firma_ID>
+<Firma_Adi>Pınar</Firma_Adi>
+<Adres>İstanbul</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>3</Firma_ID>
+<Firma_Adi>Sütaş</Firma_Adi>
+<Adres>Ankara</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>4</Firma_ID>
+<Firma_Adi>Polaris</Firma_Adi>
+<Adres>İzmir</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>5</Firma_ID>
+<Firma_Adi>Arkadaş Yayınevi</Firma_Adi>
+<Adres>İzmir</Adres>
+</FIRMALAR>
+</dataroot>

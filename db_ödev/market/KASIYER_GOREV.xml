@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2024-05-30T11:59:31">
+<KASIYER_GOREV>
+<Kasiyer_ID>1</Kasiyer_ID>
+<Gorev_Bas>2005-06-05T10:00:00</Gorev_Bas>
+<Gorev_Bit>2005-06-05T18:00:00</Gorev_Bit>
+<Kasa_No>1</Kasa_No>
+</KASIYER_GOREV>
+<KASIYER_GOREV>
+<Kasiyer_ID>1</Kasiyer_ID>
+<Gorev_Bas>2005-06-06T10:00:00</Gorev_Bas>
+<Gorev_Bit>2005-06-06T19:00:00</Gorev_Bit>
+<Kasa_No>1</Kasa_No>
+</KASIYER_GOREV>
+<KASIYER_GOREV>
+<Kasiyer_ID>2</Kasiyer_ID>
+<Gorev_Bas>2005-06-06T10:00:00</Gorev_Bas>
+<Gorev_Bit>2005-06-06T19:00:00</Gorev_Bit>
+<Kasa_No>2</Kasa_No>
+</KASIYER_GOREV>
+<KASIYER_GOREV>
+<Kasiyer_ID>3</Kasiyer_ID>
+<Gorev_Bas>2005-06-07T10:00:00</Gorev_Bas>
+<Gorev_Bit>2005-06-07T19:00:00</Gorev_Bit>
+<Kasa_No>1</Kasa_No>
+</KASIYER_GOREV>
+<KASIYER_GOREV>
+<Kasiyer_ID>2</Kasiyer_ID>
+<Gorev_Bas>2005-06-07T10:00:00</Gorev_Bas>
+<Gorev_Bit>2005-06-07T18:00:00</Gorev_Bit>
+<Kasa_No>2</Kasa_No>
+</KASIYER_GOREV>
+</dataroot>

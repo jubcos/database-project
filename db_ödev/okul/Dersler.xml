@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2024-05-30T19:25:59">
+<Dersler>
+<Ders_x0020_Kodu>BİL117</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Temel Bilgi Teknolojileri 1</Ders_x0020_Adı>
+<Teorik_x0020_Saat>2</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>2</Uygulama_x0020_Saat>
+<Dersin_x0020_İçeriği>Bilgisayara Giriş, Windows, Word, Excel</Dersin_x0020_İçeriği>
+<Hocası>2</Hocası>
+</Dersler>
+<Dersler>
+<Ders_x0020_Kodu>BİL118</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Temel Bilgi Teknolojileri 2</Ders_x0020_Adı>
+<Teorik_x0020_Saat>2</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>2</Uygulama_x0020_Saat>
+<Dersin_x0020_İçeriği>PowerPoint, Outlook, OneNote, Publisher, Access</Dersin_x0020_İçeriği>
+<Hocası>2</Hocası>
+</Dersler>
+<Dersler>
+<Ders_x0020_Kodu>FİZ103</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Fizik 1</Ders_x0020_Adı>
+<Teorik_x0020_Saat>4</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>2</Uygulama_x0020_Saat>
+<Hocası>1</Hocası>
+</Dersler>
+<Dersler>
+<Ders_x0020_Kodu>FİZ104</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Fizik 2</Ders_x0020_Adı>
+<Teorik_x0020_Saat>4</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>2</Uygulama_x0020_Saat>
+<Hocası>1</Hocası>
+</Dersler>
+<Dersler>
+<Ders_x0020_Kodu>MAT101</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Matematik 1</Ders_x0020_Adı>
+<Teorik_x0020_Saat>4</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>2</Uygulama_x0020_Saat>
+<Hocası>3</Hocası>
+</Dersler>
+<Dersler>
+<Ders_x0020_Kodu>MAT102</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Matematik 2</Ders_x0020_Adı>
+<Teorik_x0020_Saat>4</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>2</Uygulama_x0020_Saat>
+<Hocası>3</Hocası>
+</Dersler>
+<Dersler>
+<Ders_x0020_Kodu>TD101</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Türk Dili 1</Ders_x0020_Adı>
+<Teorik_x0020_Saat>2</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>0</Uygulama_x0020_Saat>
+<Hocası>4</Hocası>
+</Dersler>
+<Dersler>
+<Ders_x0020_Kodu>TD102</Ders_x0020_Kodu>
+<Ders_x0020_Adı>Türk Dili 2</Ders_x0020_Adı>
+<Teorik_x0020_Saat>2</Teorik_x0020_Saat>
+<Uygulama_x0020_Saat>0</Uygulama_x0020_Saat>
+<Hocası>4</Hocası>
+</Dersler>
+</dataroot>

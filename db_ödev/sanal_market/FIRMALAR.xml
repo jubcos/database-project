@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2024-05-30T18:41:53">
+<FIRMALAR>
+<Firma_ID>4</Firma_ID>
+<Firma_Adi>Polaris</Firma_Adi>
+<Adres>İzmir</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>5</Firma_ID>
+<Firma_Adi>Arkadaş Yayınevi</Firma_Adi>
+<Adres>İzmir</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>6</Firma_ID>
+<Firma_Adi>Genpa</Firma_Adi>
+<Adres>İstanbul</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>7</Firma_ID>
+<Firma_Adi>Nike</Firma_Adi>
+<Adres>İstanbul</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>8</Firma_ID>
+<Firma_Adi>Adidas</Firma_Adi>
+<Adres>Ankara</Adres>
+</FIRMALAR>
+<FIRMALAR>
+<Firma_ID>9</Firma_ID>
+<Firma_Adi>Kinetix</Firma_Adi>
+<Adres>İstanbul</Adres>
+</FIRMALAR>
+</dataroot>

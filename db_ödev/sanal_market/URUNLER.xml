@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2024-05-30T18:42:48">
+<URUNLER>
+<Urun_ID>10</Urun_ID>
+<Urun_Adi>Ahmet Rasim - Falaka</Urun_Adi>
+<Kategori_ID>3</Kategori_ID>
+<Firma_ID>5</Firma_ID>
+<Alis_Fiyat>10</Alis_Fiyat>
+<Satis_Fiyat>13</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>11</Urun_ID>
+<Urun_Adi>Demir Öner - Bilgisayar Ağları</Urun_Adi>
+<Kategori_ID>3</Kategori_ID>
+<Firma_ID>5</Firma_ID>
+<Alis_Fiyat>20</Alis_Fiyat>
+<Satis_Fiyat>24</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>12</Urun_ID>
+<Urun_Adi>Nokia 6300</Urun_Adi>
+<Kategori_ID>5</Kategori_ID>
+<Firma_ID>6</Firma_ID>
+<Alis_Fiyat>350</Alis_Fiyat>
+<Satis_Fiyat>380</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>13</Urun_ID>
+<Urun_Adi>Samsung D900i</Urun_Adi>
+<Kategori_ID>5</Kategori_ID>
+<Firma_ID>6</Firma_ID>
+<Alis_Fiyat>450</Alis_Fiyat>
+<Satis_Fiyat>500</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>14</Urun_ID>
+<Urun_Adi>SonyEricsson K750i</Urun_Adi>
+<Kategori_ID>5</Kategori_ID>
+<Firma_ID>6</Firma_ID>
+<Alis_Fiyat>350</Alis_Fiyat>
+<Satis_Fiyat>370</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>15</Urun_ID>
+<Urun_Adi>Kemal Tahir - Devlet Ana</Urun_Adi>
+<Kategori_ID>3</Kategori_ID>
+<Firma_ID>5</Firma_ID>
+<Alis_Fiyat>15</Alis_Fiyat>
+<Satis_Fiyat>17</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>16</Urun_ID>
+<Urun_Adi>NIKE ZOOM DT ERKEK BASKETBOL AYAKKABI</Urun_Adi>
+<Kategori_ID>6</Kategori_ID>
+<Firma_ID>7</Firma_ID>
+<Alis_Fiyat>100</Alis_Fiyat>
+<Satis_Fiyat>115</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>17</Urun_ID>
+<Urun_Adi>NIKE ROUBAIX BAYAN SPOR AYAKKABI</Urun_Adi>
+<Kategori_ID>6</Kategori_ID>
+<Firma_ID>7</Firma_ID>
+<Alis_Fiyat>118</Alis_Fiyat>
+<Satis_Fiyat>134</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>18</Urun_ID>
+<Urun_Adi>ADIDAS SPEEDER SPOR AYAKKABI</Urun_Adi>
+<Kategori_ID>6</Kategori_ID>
+<Firma_ID>8</Firma_ID>
+<Alis_Fiyat>135</Alis_Fiyat>
+<Satis_Fiyat>153</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>19</Urun_ID>
+<Urun_Adi>ADIDAS SPEEDASH SPOR AYAKKABI</Urun_Adi>
+<Kategori_ID>6</Kategori_ID>
+<Firma_ID>8</Firma_ID>
+<Alis_Fiyat>135</Alis_Fiyat>
+<Satis_Fiyat>153</Satis_Fiyat>
+</URUNLER>
+<URUNLER>
+<Urun_ID>20</Urun_ID>
+<Urun_Adi>KINETIX VITORO TURF ERKEK HALI SAHA</Urun_Adi>
+<Kategori_ID>6</Kategori_ID>
+<Firma_ID>9</Firma_ID>
+<Alis_Fiyat>40</Alis_Fiyat>
+<Satis_Fiyat>45</Satis_Fiyat>
+</URUNLER>
+</dataroot>

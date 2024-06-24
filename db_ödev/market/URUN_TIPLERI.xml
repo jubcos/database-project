@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2024-05-30T12:00:09">
+<URUN_TIPLERI>
+<Urun_Tip_ID>1</Urun_Tip_ID>
+<Urun_Tip_Adi>Gıda</Urun_Tip_Adi>
+<KDV_Orani>8</KDV_Orani>
+</URUN_TIPLERI>
+<URUN_TIPLERI>
+<Urun_Tip_ID>2</Urun_Tip_ID>
+<Urun_Tip_Adi>Giyim</Urun_Tip_Adi>
+<KDV_Orani>18</KDV_Orani>
+</URUN_TIPLERI>
+<URUN_TIPLERI>
+<Urun_Tip_ID>3</Urun_Tip_ID>
+<Urun_Tip_Adi>Kitap</Urun_Tip_Adi>
+<KDV_Orani>1</KDV_Orani>
+</URUN_TIPLERI>
+<URUN_TIPLERI>
+<Urun_Tip_ID>4</Urun_Tip_ID>
+<Urun_Tip_Adi>Temizlik Ürünleri</Urun_Tip_Adi>
+<KDV_Orani>10</KDV_Orani>
+</URUN_TIPLERI>
+</dataroot>

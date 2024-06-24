@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2024-05-30T18:42:04">
+<KATEGORILER>
+<Kategori_ID>1</Kategori_ID>
+<Kategori_Adi>Gıda</Kategori_Adi>
+<KDV_Orani>8</KDV_Orani>
+</KATEGORILER>
+<KATEGORILER>
+<Kategori_ID>2</Kategori_ID>
+<Kategori_Adi>Giyim</Kategori_Adi>
+<KDV_Orani>18</KDV_Orani>
+</KATEGORILER>
+<KATEGORILER>
+<Kategori_ID>3</Kategori_ID>
+<Kategori_Adi>Kitap</Kategori_Adi>
+<KDV_Orani>1</KDV_Orani>
+</KATEGORILER>
+<KATEGORILER>
+<Kategori_ID>4</Kategori_ID>
+<Kategori_Adi>Temizlik Ürünleri</Kategori_Adi>
+<KDV_Orani>10</KDV_Orani>
+</KATEGORILER>
+<KATEGORILER>
+<Kategori_ID>5</Kategori_ID>
+<Kategori_Adi>Cep Telefonları</Kategori_Adi>
+<KDV_Orani>18</KDV_Orani>
+</KATEGORILER>
+<KATEGORILER>
+<Kategori_ID>6</Kategori_ID>
+<Kategori_Adi>Spor</Kategori_Adi>
+<KDV_Orani>18</KDV_Orani>
+</KATEGORILER>
+</dataroot>

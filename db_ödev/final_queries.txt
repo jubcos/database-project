@@ -1,0 +1,210 @@
+MARKET
+
+1. Show the dates on which the customer named “Ahmet Solmaz” made purchase:
+SELECT Tarih
+FROM SATIS
+WHERE MUSTERI_ID = (
+  SELECT MUSTERI_ID
+  FROM MUSTERILER
+  WHERE Ad = 'Ahmet' AND Soyad = 'Solmaz'
+);
+
+2.Show the name and surname of people who shopped at the market at least 5 times in November
+2005:
+
+SELECT Ad, Soyad
+FROM MUSTERILER
+WHERE MUSTERI_ID IN (
+  SELECT MUSTERI_ID
+  FROM SATIS
+  WHERE EXTRACT(MONTH FROM TARIH) = 11 AND EXTRACT(YEAR FROM TARIH) = 2005
+  GROUP BY MUSTERI_ID
+  HAVING COUNT(FATURA_ID) >= 5
+);
+
+3. Show the average sales prices of products belonging to the product type whose 
+Product_Type_Name is “Book”:
+
+SELECT AVG(SATIS_FIYAT)
+FROM URUNLER
+WHERE URUN_TIPI = (
+  SELECT URUN_TIP_ID
+  FROM URUN_TIPLERI
+  WHERE URUN_TIP_ADI = 'Kitap'
+);
+
+4. Show the name and surname of customers who purchased Adidas products in October 2009:
+
+SELECT DISTINCT M.Ad, M.Soyad
+FROM MUSTERILER M
+JOIN SATIS S ON M.Musteri_ID = S.Musteri_ID
+JOIN FATURA_DETAY FD ON S.Fatura_ID = FD.Fatura_ID
+JOIN URUNLER U ON FD.Urun_ID = U.Urun_ID
+JOIN FIRMALAR F ON U.Firma_ID = F.Firma_ID
+WHERE F.Firma_Adi = 'Adidas' AND EXTRACT (MONTH FROM (S.Tarih))  = 10 AND EXTRACT (YEAR FROM S.Tarih) = 2009;
+
+
+
+5. Show all customers in order from highest to lowest according to their total spending:
+
+SELECT Ad, Soyad, SUM(Satis_Fiyat) AS Total_Spending
+FROM MUSTERILER M
+JOIN SATIS S ON M.Musteri_ID = S.Musteri_ID
+JOIN FATURA_DETAY FD ON S.Fatura_ID = FD.Fatura_ID
+JOIN URUNLER U ON FD.Urun_ID = U.Urun_ID
+GROUP BY M.Ad, M.Soyad
+ORDER BY Total_Spending DESC;
+
+
+6. Show the name of each product type and the name of the product with the highest sales price in 
+that product type:
+
+SELECT UT.Urun_Tip_Adi, U.Urun_Adi
+FROM URUNLER U
+JOIN URUN_TIPLERI UT ON U.Urun_Tipi = UT.Urun_Tip_ID
+WHERE (U.Urun_Tipi, U.Satis_Fiyat) IN (
+  SELECT Urun_Tipi, MAX(Satis_Fiyat)
+  FROM URUNLER
+  GROUP BY Urun_Tipi
+);
+
+
+7. Show the name of the most sold discounted product in the last 2 weeks:
+
+WITH OrderedProducts AS (
+    SELECT U.Urun_Adi, COUNT(U.Urun_ID) AS Urun_Count
+    FROM URUNLER U
+    JOIN INDIRIMLI_URUNLER I ON U.Urun_ID = I.Urun_ID
+    JOIN FATURA_DETAY FD ON U.Urun_ID = FD.Urun_ID
+    JOIN SATIS S ON FD.Fatura_ID = S.Fatura_ID
+    WHERE S.Tarih >= SYSDATE - 14
+    GROUP BY U.Urun_Adi
+    ORDER BY COUNT(U.Urun_ID) DESC
+)
+SELECT Urun_Adi
+FROM OrderedProducts
+WHERE ROWNUM = 1;
+
+
+8. Names of cashier(s) who worked on the 7th of the month and whose salary was 700 lira or more:
+
+
+SELECT Ad, Soyad
+FROM KASIYERLER K
+JOIN KASIYER_GOREV KG ON K.KASIYER_ID = KG.KASIYER_ID
+WHERE EXTRACT(DAY FROM KG.Gorev_Bas) = 7 AND Maas >= 700;
+
+9. Number of books in the book category with a profit of more than 4 lira:
+
+SELECT COUNT(*)
+FROM URUNLER
+WHERE URUN_TIPI = 3 AND (SATIS_FIYAT - ALIS_FIYAT) > 4;
+
+10. Names of companies that offer discounts on food products:
+
+SELECT FIRMA_ADI
+FROM FIRMALAR
+WHERE FIRMA_ID IN (
+  SELECT FIRMA_ID
+  FROM URUNLER
+  WHERE URUN_ID IN (
+    SELECT URUN_ID
+    FROM INDIRIMLI_URUNLER
+  ) AND URUN_TIPI = 1
+);
+
+
+11. Among the discounted products sold in the store, the name, purchase price, sales price, 
+discounted price and profit of the product that causes loss to the store after the discount:
+
+SELECT U.Urun_Adi, U.Alis_Fiyat, U.Satis_Fiyat, 
+       (U.Satis_Fiyat - (U.Satis_Fiyat * (I.Iskonto / 100))) AS Discounted_Price,
+       ((U.Satis_Fiyat - (U.Satis_Fiyat * (I.Iskonto / 100))) - U.Alis_Fiyat) AS Profit
+FROM URUNLER U
+JOIN INDIRIMLI_URUNLER I ON U.Urun_ID = I.Urun_ID
+WHERE ((U.Satis_Fiyat - (U.Satis_Fiyat * (I.Iskonto / 100))) - U.Alis_Fiyat) < 0;
+
+
+SCHOOL
+
+1. Show the number of students who were successful in the “Data Base” course and the average of 
+their success grades:
+
+SELECT COUNT(*) AS Successful_Students, AVG(Final) AS Average_Grade
+FROM Notlar
+WHERE DersKodu = 'BIL117' AND Final >= 50;
+
+2. Show the names of faculty members who taught two or more courses:
+
+SELECT H.ADI, H.SOYADI
+FROM Hocalar H
+JOIN Dersler D ON H.Hoca_No = D.Hocası
+GROUP BY H.ADI, H.SOYADI
+HAVING COUNT(D.Ders_Kodu) >= 2;
+
+3. Show the names of all the courses taken by the student named “Ahmet Solmaz” and their 
+midterm, final and success grades along with these names:
+
+SELECT D.DERS_ADI, N.VIZE1, N.VIZE2, N.FINAL
+FROM NOTLAR N
+JOIN Dersler D ON N.DERS_KODU = D.DERS_KODU
+WHERE N.OGRENCI_NO = (
+  SELECT OGRENCI_NO
+  FROM OGRENCILER
+  WHERE ADI = 'Ahmet' AND SOYADI = 'Solmaz'
+);
+
+4. Show the names of all students who took lessons from the teacher named “Zeki Durmuş”:
+
+SELECT DISTINCT O.ADI, O.SOYADI
+FROM OGRENCILER O
+JOIN Notlar N ON O.OGRENCI_NO = N.OGRENCI_NO
+JOIN Dersler D ON N.DERS_KODU = D.DERS_KODU
+JOIN Hocalar H ON D.HOCASI = H.HOCA_NO
+WHERE H.ADI = 'Zeki' AND H.SOYADI = 'Durmuş';
+
+
+
+5. How Many Doç. Dr., Yrd. Doç. Dr. Ve Uzman at the School? 
+
+SELECT UNVANI, COUNT(*) AS Count
+FROM HOCALAR
+GROUP BY UNVANI;
+
+
+6. Show the names of the students who took the courses given by the teacher named "Aydın Carus" 
+and were successful in at least one of them
+
+SELECT DISTINCT O.ADI, O.SOYADI
+FROM OGRENCILER O
+JOIN NOTLAR N ON O.OGRENCI_NO = N.OGRENCI_NO
+JOIN DERSLER D ON N.DERS_KODU = D.DERS_KODU
+JOIN HOCALAR H ON D.HOCASI = H.HOCA_NO
+WHERE H.ADI = 'Aydın' AND H.SOYADI = 'Carus' AND (
+    N.VIZE1 >= 50 OR N.VIZE2 >= 50 OR N.Final >= 50 OR N.BUTUNLEME >= 50
+);
+
+
+
+SANALMARKET
+
+1. Show the name and surname of customers who buy products from 'Nike' company
+
+SELECT DISTINCT M.Ad, M.Soyad
+FROM Musteriler_sanalmarket M
+JOIN Siparisler_sanalmarket S ON M.Musteri_ID = S.Musteri_ID
+JOIN Siparis_Detay_sanalmarket SD ON S.Siparis_ID = SD.Siparis_ID
+JOIN Urunler U ON SD.Urun_ID = U.Urun_ID
+WHERE U.Firma_ID = (
+  SELECT Firma_ID
+  FROM Firmalar
+  WHERE Firma_Adi = 'Nike'
+);
+
+2. Show the number of customers who made purchases after April:
+
+SELECT COUNT(DISTINCT Musteri_ID) AS Customer_Count
+FROM Siparisler_SANALMARKET
+WHERE EXTRACT(MONTH FROM Tarih) > 4;
+
+
